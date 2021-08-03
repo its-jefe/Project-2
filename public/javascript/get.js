@@ -3,7 +3,7 @@ var axios = require("axios").default;
 let lat;
 let lon;
 
-function getRestaurants(){
+function getRestaurants() {
     console.log('getting restaurants')
     var restaurants = {
         method: 'GET',
@@ -13,7 +13,7 @@ function getRestaurants(){
             longitude: lon,
             limit: "30", // max
             currency: 'USD',
-            distance: '5',
+            distance: '10',
             open_now: 'true',
             lunit: 'mi',
             lang: 'en_US',
@@ -23,13 +23,25 @@ function getRestaurants(){
             'x-rapidapi-host': 'travel-advisor.p.rapidapi.com'
         }
     };
-        
+
     axios.request(restaurants).then(async function (response) {
+        let cuisines = {}
+
         for (let i = 0; i < response.data.data.length; i++) {
-            console.log(i);
-            console.log(await response.data.data[i].name);
-            console.log(await response.data.data[i].cuisine);
+            let restaurant = await response.data.data[i];
+            // console.log(restaurant.name)
+            // console.log(restaurant.cuisine)
+
+            // (Object.values(restaurant));
+            if (restaurant.cuisine){
+                for (let j = 0; j < restaurant.cuisine.length; j++) {
+                    console.log(JSON.stringify(restaurant.cuisine[j].name));
+                    cuisines[JSON.stringify(restaurant.cuisine[j].name)] = '';
+                }
+                // try .filter()
+            }
         }
+        console.log(cuisines)
     }).catch(function (error) {
         console.error(error);
     });
@@ -53,6 +65,3 @@ axios.request(location).then(async function (response) {
 }).catch(function (error) {
     console.error(error);
 })
-
-
-

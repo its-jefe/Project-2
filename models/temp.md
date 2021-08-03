@@ -10,6 +10,7 @@ Cuisines {
     id
     name
 }
+*  *
 
 Query {
     id
