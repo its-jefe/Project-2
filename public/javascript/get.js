@@ -59,6 +59,7 @@ function getLocation() {
     axios.request(location).then(async function (response) {
         let lat = await response.data.location.latitude;
         let lon = await response.data.location.longitude;
+
         console.log(lat, lon)
         getRestaurants(lat, lon)
     }).catch(function (error) {
@@ -67,4 +68,4 @@ function getLocation() {
     })
 }
 
-getLocation()
+getLocation();
