@@ -1,5 +1,9 @@
 var axios = require("axios").default;
 
+// name
+// location (address)
+// hours
+
 async function getRestaurants(lat, lon) {
     console.log('getting restaurants')
     var restaurants = {
@@ -22,11 +26,14 @@ async function getRestaurants(lat, lon) {
     };
 
     axios.request(restaurants).then(async function (response) {
+
         let cuisines = []
 
         for (let i = 0; i < response.data.data.length; i++) {
+            
             let restaurant = await response.data.data[i];
-
+            console.log(i + ": " + restaurant.name) // just for show .. log names with their index number
+            // console.log(restaurant)
             if (restaurant.name) { // if the restaurant has a name 
                 if (restaurant.cuisine) { // and also has a cuisine listed
                     for (let j = 0; j < restaurant.cuisine.length; j++) {
@@ -35,7 +42,6 @@ async function getRestaurants(lat, lon) {
                         }
                     }
                 }
-                console.log(i + ": " + restaurant.name) // just for show .. log names with their index number
             }
         }
         console.log(cuisines) // log filled cuisines array
