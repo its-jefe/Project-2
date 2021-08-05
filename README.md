@@ -28,6 +28,7 @@ Easy Eats is a full stack web application where a user can sign up, log in to ou
 - Victor, Mervens - 
 
 # Links
-- https://github.com/its-jefe/Project-2
+- Github https://github.com/its-jefe/Project-2
+- Heroku https://glistening-geese.herokuapp.com/
 
 [parsley]:https://parsleyjs.org/
