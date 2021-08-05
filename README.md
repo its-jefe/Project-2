@@ -1,5 +1,5 @@
 # Easy Eats
-![Screenshot1](public\assets\images\easyeats_logo.png)
+![Screenshot1](https://github.com/its-jefe/Project-2/blob/develop/public/assets/images/easyeats_logo.png)
 Easy Eats is a full stack web application where a user can sign up, log in to our app and have access to restaurants around their area. The user will be able to pick cuisines available in their area and the app will list restaurants within the area with the available cuisine.
 
 # Challenges 
