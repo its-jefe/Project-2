@@ -43,9 +43,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // query_history: {
-      
-    // }
   },
   {
     hooks: {
