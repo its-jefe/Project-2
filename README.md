@@ -16,7 +16,7 @@ Easy Eats is a full stack web application where a user can sign up, log in to ou
 - [x] jQuery
 - [x] Axios node module
 - [x] APIs – Travel Advisor, IP Geolocation
-- [x] Parsley, JavaScript form validation library
+- [x] [Parsley, JavaScript form validation library][parsley] 
 - [x] Sequelize
 - [x] Heroku
 - [x] JawsDB
@@ -27,7 +27,7 @@ Easy Eats is a full stack web application where a user can sign up, log in to ou
 - Gonzalez, Gabriel -
 - Victor, Mervens - 
 
-
 # Links
+- https://github.com/its-jefe/Project-2
 
-- https://github.com/its-jefe/Project-2 
+[parsley]:https://parsleyjs.org/
