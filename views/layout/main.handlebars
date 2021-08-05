@@ -13,12 +13,20 @@
 </head>›
 
 <body>
-<!--
-    Notice a special placeholder in the <main> element: {{{ body }}}. 
-    This is Handlebars.js syntax for data that will be plugged in later. 
-    In this case, the data will be another, smaller template, like the contents of the homepage.
--->
-    {{{ body }}}
+    <header>
+        <nav>
+            <a href="/homepage">Home</a>
+            <button id="logout" class="btn-no-style">logout</button>
+            <a href="/login">Login</a>
+            <a href="/history">History</a>
+        </nav>
+        <h1>
+            <a href="/">EasyEats</a>
+        </h1>
+    </header>
+    <main>
+        {{{ body }}}
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -26,6 +34,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
