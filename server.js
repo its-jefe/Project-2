@@ -29,6 +29,7 @@ const sess = {
 // passing session object into session
 app.use(session(sess));
 
+// add functionality to handlebars
 const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
@@ -47,11 +48,6 @@ This is useful for front-end specific files like images, style sheets, and JavaS
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
-
-// Default response for any other request (Not Found)
-app.use((req, res) => {
-  res.status(404).end();
-});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening: ${PORT}`));
