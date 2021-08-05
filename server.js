@@ -16,7 +16,7 @@ require('dotenv').config();
 
 // session object
 const sess = {
-  secret: process.env.DB_SECRET,
+  secret: 'Secret secret secret!',
   cookie: {},
   resave: false,
   saveUninitialized: true,

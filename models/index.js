@@ -6,4 +6,4 @@ User.hasMany(Cuisine, {
     onDelete: 'SET NULL'
   });
 
-module.exports = { User, Cuisine}
+module.exports = { User, Cuisine }
