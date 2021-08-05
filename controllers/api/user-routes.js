@@ -34,6 +34,12 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// CATCHALL GET ROUTE ???
+// IS THE POSITION OF THIS CODEBLOCK IMPORTANT (need to be at the end??)
+router.get('*', (_req, res) => {
+  res.redirect('/');;
+});
+
 // POST /api/users
 router.post('/', (req, res) => {
   User.create({

@@ -1,6 +1,9 @@
+// The path module provides utilities for working with file and directory paths.
 const path = require('path');
 const express = require('express');
+
 const session = require('express-session');
+
 const exphbs = require('express-handlebars');
 
 const app = express();
@@ -30,14 +33,25 @@ const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
 
+// set up Handlebars.js as your app's template engine of choice:
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+/*
+The express.static() method is a built-in Express.js middleware function 
+that can take all of the contents of a folder and serve them as static assets. 
+This is useful for front-end specific files like images, style sheets, and JavaScript files.
+*/
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
+
+// Default response for any other request (Not Found)
+app.use((req, res) => {
+  res.status(404).end();
+});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening: ${PORT}`));
