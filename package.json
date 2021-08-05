@@ -8,7 +8,6 @@
     "start": "node server.js",
     "banana": "node public/javascript/get.js",
     "seed": "node seeds/index.js"
-
   },
   "repository": {
     "type": "git",
