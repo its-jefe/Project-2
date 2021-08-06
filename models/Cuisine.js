@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-// create our User model
 class Cuisine extends Model {}
 
 Cuisine.init(

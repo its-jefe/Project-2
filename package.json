@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "banana": "node public/javascript/get.js"
+    "banana": "node public/javascript/get.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^6.1.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
