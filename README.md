@@ -22,10 +22,10 @@
 - [x] JawsDB
 
 # Contributors
-- Timson, Jeff - Project Lead/ backend
-- Koberstine, Chris - JavaScript/ backend
-- Gonzalez, Gabriel -
-- Victor, Mervens - 
+- Timson, Jeff - Project Lead/JS/Structure Backend
+- Koberstine, Chris - JavaScript/Distribution/Database Backend
+- Gonzalez, Gabriel - Vetted APIs/Frontend/ReadMe/Slides
+- Victor, Mervens - Functionality/BootStrap/MarkDown/Layout
 
 # Links
 - Github https://github.com/its-jefe/Project-2
