@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'MoviePoster';
+  src: url('../assets/fonts/Movie_Poster.ttf') format('truetype');
+  }
+
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body, html {
@@ -8,13 +14,13 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #dee1e2;
+  font-family: 'MoviePoster';
 }
 
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
-
 
 .row.content {height: 450px}
 
