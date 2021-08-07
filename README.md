@@ -7,19 +7,29 @@
 - [x] Creating routes for retrieving and adding new data
 - [x] Folder structure that meets MVC paradigms
 - [x] Protect API keys in Node with environment variables(.env/heroku)
+- [x] Asynchronicity (npm i async)
 
-# Technology
+# Technologies
 - [x] HTML
 - [x] CSS
-- [x] Bootstrap
 - [x] Javascript
-- [x] jQuery
-- [x] Axios node module
+- [x] Bootstrap
 - [x] APIs – Travel Advisor, IP Geolocation
-- [x] [Parsley, JavaScript form validation library][parsley] 
-- [x] Sequelize
+- [x] NPM Dependencies
+    - async (NEW)
+    - axios (NEW)
+    - [parsley][parsley] (NEW : future implementation)
+    - bcrypt
+    - connect-session-sequelize
+    - dotenv
+    - express
+    - express-handlebars
+    - express-session
+    - handlebars
+    - mysql2
+    - sequelize
 - [x] Heroku
-- [x] JawsDB
+    - JawsDB
 
 # Contributors
 - Timson, Jeff - Project Lead/JS/Structure Backend
