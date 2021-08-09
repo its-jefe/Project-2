@@ -5,6 +5,8 @@ To do so, we'll add a custom helper function to the Handlebars.js app.
 
 AND because helpers are essentially just functions, we can actually unit test them.
 */
+
+
 module.exports = {
   format_date: date => {
     return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(
@@ -25,5 +27,5 @@ module.exports = {
     }
 
     return word;
-  }
+  },
 };

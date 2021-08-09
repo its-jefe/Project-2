@@ -7,7 +7,7 @@
 - [x] Creating routes for retrieving and adding new data
 - [x] Folder structure that meets MVC paradigms
 - [x] Protect API keys in Node with environment variables(.env/heroku)
-- [x] Asynchronicity (npm i async)
+- [x] Asynchronicity
 
 # Technologies
 - [x] HTML
@@ -16,7 +16,6 @@
 - [x] Bootstrap
 - [x] APIs – Travel Advisor, IP Geolocation
 - [x] NPM Dependencies
-    - async (NEW)
     - axios (NEW)
     - [parsley][parsley] (NEW : future implementation)
     - bcrypt
@@ -42,3 +41,10 @@
 - Heroku https://glistening-geese.herokuapp.com/
 
 [parsley]:https://parsleyjs.org/
+
+## Potential Issues
+- If the user takes a long time to pick quisines, restaurants may close
+    - would like to add clock functions to keep track of closing times for restaurants
+    - maybe also add a warning for the user to be cautious of this
+    - Closing times are returned from the API's so after the user has made their selection based on the cuisines in their area... These closing times should be tracked on the next screen where the user can choose resturants 
+    - Would be nice to make cards for each restuarant...

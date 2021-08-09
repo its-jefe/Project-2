@@ -1,0 +1,13 @@
+  <div>
+      <h1>Available Cuisines</h1>
+  </div>
+
+    <ol class="post-list"></ol>
+  {{#each cuisines as |cuisine|}}
+    <li>
+    {{> cuisine-part cuisine }}
+   </li>
+
+  {{/each}}
+
+  <script src='/javascript/cuisines.js'></script>

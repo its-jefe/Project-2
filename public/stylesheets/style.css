@@ -1,20 +1,107 @@
 @font-face {
-  font-family: 'MoviePoster';
-  src: url('../assets/fonts/Movie_Poster.ttf') format('truetype');
-  }
+  font-family: "MoviePoster";
+  src: url("../assets/fonts/Movie_Poster.ttf") format("truetype");
+}
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  padding: .25%;
+  width: 100%;
+  padding: 0;
   margin: 0;
   font-family: sans-serif;
   color: #dee1e2;
-  font-family: 'MoviePoster';
+  font-family: "MoviePoster";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: aliceblue; */
+}
+
+
+
+header {
+  background-color: rgb(212, 233, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+.logo{
+  margin-right: 0.35rem;
+}
+.inner-header {
+  background-color: rgb(61, 98, 131);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: .5rem;
+  padding: 0rem 0.5rem;
+  /* border: .25rem solid rgb(0, 42, 78) */
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+ display: flex;
+ align-items: center;
+}
+nav{
+  background-color:rgb(48, 79, 105);
+  height: min-content;
+}
+.login {
+  color: #dee1e2;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 3rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  padding: 0;
+  margin: .35rem;
+}
+
+#im-hungry{
+  font-family: "MoviePoster";
+  background-color: rgb(212, 233, 252);
+  font-size: 2rem;
+  padding: 1rem;
+  border: .25rem outset rgb(61, 98, 131);
+  color: #10566d;
+  border-radius: 15px;
+  box-shadow: 0 2px rgb(24, 40, 53);
+}
+#im-hungry:hover{
+  background-blend-mode: color;
+  transform: scale(1px);
+}
+#im-hungry:active {
+  background-color: rgb(190, 216, 240);
+  border: .25rem inset rgb(23, 37, 49);
+  color: #0a3847;
+  box-shadow: 0 0px rgb(24, 40, 53);
+}
+/* 
+
+main {
+  width: 100%;
 }
 
 .navbar {
@@ -42,4 +129,6 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;} 
-}
+} 
+
+*/

@@ -52,3 +52,7 @@ app.use(require('./controllers/'));
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening: ${PORT}`));
 });
+
+// const http = require("http")
+// console.log(http.METHODS)
+// console.log(http.STATUS_CODES)
