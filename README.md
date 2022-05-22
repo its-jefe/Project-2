@@ -26,7 +26,7 @@
 - [x] JawsDB
 
 # Contributors
-- Timson, Jeff - Project Lead/Front-End/API Calls/JS/Structured Backend
+- Timson, Jeff - Project Lead/Front-End/API Calls/JS/Structured Back-End
 - Koberstine, Chris - JavaScript/Distribution/Database Backend
 - Gonzalez, Gabriel - Vetted APIs/Frontend/ReadMe/Slides
 - Victor, Mervens - Functionality/BootStrap/MarkDown/Layout
