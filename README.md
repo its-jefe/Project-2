@@ -1,4 +1,4 @@
-# `Great concept but time contraints took their toll`
+# `Great concept but time constraints took their toll`
 
 ## To Be Continued...?
 
